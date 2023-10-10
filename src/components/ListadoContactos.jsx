@@ -5,11 +5,8 @@ const ListadoContactos = ({ contactos, setContacto, eliminarContacto }) => {
     <div className="md:w-1/2 lg:w-3/5 h-screen overflow-y-scroll">
       {contactos && contactos.length ? (
         <>
-          <h2 className="font-blank text-3xl text-center">Listado Contactos</h2>
-          <p className="text-xl mt-5 mb-10 text-center">
-            Administra tus {""}
-            <span className="text-indigo-600 font-bold">Pacientes y Citas</span>
-          </p>
+          <h2 className="font-blank text-3xl text-center">Lista Contactos</h2>
+          
 
           { contactos.map(( contacto ) => (
             <Contacto key={ contacto.id } 

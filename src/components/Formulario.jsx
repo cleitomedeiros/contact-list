@@ -67,6 +67,7 @@ const Formulario = ({ contactos, setContactos, contacto }) => {
       // Adicionamos lista de usuario
       objetoContacto.id = generarId();
       setContactos([ ...contactos, objetoContacto ]);   
+      
     }
 
     // Limpiar formulario despues de enviar
@@ -76,12 +77,9 @@ const Formulario = ({ contactos, setContactos, contacto }) => {
 
   return (
     <div className="md:w-1/2 lg:w-3/5">
-      <h2 className="font-blank text-3xl text-center">Seguimiento Paciente</h2>
+      <h2 className="font-blank text-3xl text-center">Añade Contactos</h2>
 
-      <p className="text-xl mt-5 mb-10 text-center">
-        Añade Pacientes y {""}
-        <span className="text-indigo-600 font-bold ">Administralos</span>
-      </p>
+      
       {/* Formulário */}
       <form
         onSubmit={handleSubmit}
@@ -163,7 +161,7 @@ const Formulario = ({ contactos, setContactos, contacto }) => {
           <input
             type="submit"
             className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors"
-            value={contacto && contacto.id ? 'Editar paciente' : 'Agregar Paciente'}
+            value={contacto && contacto.id ? 'Editar contacto' : 'Agregar contacto'}
             
           />
         </div>

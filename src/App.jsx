@@ -30,10 +30,10 @@ function App() {
       <Header />
       <div className="mt-12 flex">
         <Formulario 
-        pacientes={ contactos } 
-        setPacientes={ setContactos }
+        contactos={ contactos } 
+        setContactos={ setContactos }
         //Ok+++
-        paciente={ contacto } 
+        contacto={ contacto } 
         />
 
         <ListadoContactos 
